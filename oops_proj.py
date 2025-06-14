@@ -22,5 +22,16 @@ class chatbook:
             pass
         else :
             exit()    
+    # signup function created......
+    def signup(self):
+        email = input("enter your email----->")
+        pwd = input("set-up your password")
+        self.username = email
+        self.password = pwd
+        print("\n")
+        print("signed up successfully")
+        print("\n")
+        self.menu()
+
 
 obj = chatbook()            
