@@ -11,11 +11,11 @@ class chatbook:
                            2. press 2 to signin
                            3. press 3 to write a post 
                            4. press 4 to message a frnd
-                           5. press any other key to exit""")
+                           5. press any other key to exit\n""")
         if user_input == "1":
             self.signup()
         elif user_input == "2":
-            pass
+            self.signin()
         elif user_input == "3":
             pass
         elif user_input == "4":
@@ -32,6 +32,23 @@ class chatbook:
         print("signed up successfully")
         print("\n")
         self.menu()
+
+    # signin function created
+    def signin(self):
+        if self.username == ' ' and self.password == ' ':
+            print("plz signup first by pressing 1 in the main menu")
+        else:
+            uname = input("enter your email/username here--->")
+            pwd = input("Enter your password here--->")
+            if self.username==uname and self.password==pwd:
+                print("you have signedin successfully !!")
+                self.loggedin = True
+            else:
+                print("plz input correct credentials..")
+        print("\n")
+        self.menu()            
+
+        
 
 
 obj = chatbook()            
