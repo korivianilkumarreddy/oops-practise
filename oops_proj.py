@@ -12,13 +12,13 @@ class chatbook:
                            3. press 3 to write a post 
                            4. press 4 to message a frnd
                            5. press any other key to exit""")
-        if user_input == 1:
+        if user_input == "1":
+            self.signup()
+        elif user_input == "2":
             pass
-        elif user_input == 2:
+        elif user_input == "3":
             pass
-        elif user_input == 3:
-            pass
-        elif user_input == 4:
+        elif user_input == "4":
             pass
         else :
             exit()    
